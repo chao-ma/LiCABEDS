@@ -1,0 +1,835 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    BUTTON      ID_FILE_PRINT
+    SEPARATOR
+    BUTTON      ID_ADABOOST_MODELTRAINING
+    BUTTON      ID_EDIT_STOPTRAINING
+    BUTTON      ID_ADABOOST_PREDICTING
+    BUTTON      ID_VIEW_STARTUPPAGE
+    BUTTON      ID_VIEW_TRAININGERROR
+    BUTTON      ID_VIEW_PREDICTION
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New Project...\tCtrl+N",     ID_FILE_NEW
+        MENUITEM "&Open Workspace...\tCtrl+O",  ID_FILE_OPEN
+        MENUITEM "&Save Workspace\tCtrl+S",     ID_FILE_SAVE
+        MENUITEM "Save Workspace &As...",       ID_FILE_SAVE_AS
+        MENUITEM "Load Fingerprints...",        ID_FILE_LOADFINGERPRINTS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Model Training...",          ID_ADABOOST_MODELTRAINING
+        MENUITEM "&Stop Training",              ID_EDIT_STOPTRAINING
+        MENUITEM "Parameter Optimization...",   ID_EditParameterOpt
+        MENUITEM "P&redicting...",              ID_ADABOOST_PREDICTING
+        MENUITEM "E&xport...",                  ID_EDIT_EXPORT
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM "&Find...\tCtrl+F",            ID_EDIT_FIND
+        MENUITEM SEPARATOR
+        MENUITEM "Select &All\t Ctrl+A",        ID_EDIT_SELECTALL
+        MENUITEM "&Edit Project Title...",      ID_EDIT_EDITPROJECTTITLE
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "Startup Page",                ID_VIEW_STARTUPPAGE
+        MENUITEM "P&rediction",                 ID_VIEW_PREDICTION
+        MENUITEM "Training Error",              ID_VIEW_TRAININGERROR
+        MENUITEM SEPARATOR
+        MENUITEM "&Fit to Window Size",         ID_VIEW_FITTOWINDOWSIZE
+        MENUITEM "Vertical Zoom-in\tCtrl+Z",    ID_VIEW_VERTICALZOOMIN
+        MENUITEM "Horizontal Zoom-in\tCtrl+H",  ID_VIEW_HORIZONALZOOMIN
+        MENUITEM "Vertical Zoom-out\tAlt+Z",    ID_VIEW_VERTICALZOOMOUT
+        MENUITEM "Horizontal Zoom-out\tAlt+H",  ID_VIEW_HORIZONALZOOMOUT
+        MENUITEM "&Display Option...",          ID_VIEW_DISPLAYOPTION
+        MENUITEM "Show Coordinates",            ID_VIEW_SHOWCOORDINATES
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Contents...",                ID_HELP_CONTENTS
+        MENUITEM "&About FCC...",               ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "F",            ID_EDIT_FIND,           VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    "H",            ID_VIEW_HORIZONALZOOMIN, VIRTKEY, CONTROL, NOINVERT
+    "H",            ID_VIEW_HORIZONALZOOMOUT, VIRTKEY, ALT, NOINVERT
+    "Z",            ID_VIEW_VERTICALZOOMIN, VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_VIEW_VERTICALZOOMOUT, VIRTKEY, ALT, NOINVERT
+    "A",            ID_EDIT_SELECTALL,      VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 226, 54
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About FCC"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDI_PROJECT,IDC_STATIC,7,7,21,20
+    LTEXT           "FCC Version 1.0",IDC_STATIC,33,7,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2009",IDC_STATIC,100,7,119,8
+    DEFPUSHBUTTON   "OK",IDOK,147,37,50,16,WS_GROUP
+    LTEXT           "Contact shakaskywalker@hotmail.com for technical questions.",IDC_STATIC,29,22,190,16
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "Computational Biology, University of Pittsburgh"
+            VALUE "FileDescription", "Software to do compound classification based on molecular fingerprints."
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "FCC.exe"
+            VALUE "LegalCopyright", "Software developed by Chao Ma.  All rights reserved."
+            VALUE "OriginalFilename", "FCC.exe"
+            VALUE "ProductName", "Fingerprint-based Compound Classifier"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 219
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 53
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE initialization failed.  Make sure that the OLE libraries are the correct version."
+    IDS_MESSAGE_NEWDOCUMENT "New document is created"
+    IDS_INDICATOR_MESSAGE   "The indicator to show icon."
+    IDS_INDICATOR_RUNNING   "Job is running."
+    IDS_INDICATOR_WARNING   "Error occurs."
+    IDS_MESSAGE_EDITDOCUMENT "Change the document title and names"
+    IDS_MESSAGE_WELCOME     "welcome message"
+    IDS_MESSAGE_SAVE        "save the workspace"
+    IDS_MESSAGE_RESTORE     "Restore workspace"
+    IDS_MESSAGE_FATALFILEREADING 
+                            "fatal error in reading the file. can't find char return"
+    IDS_MESSAGE_FPREADINGSUCC 
+                            "Successfully finishing reading the fingerprint file."
+    IDS_MESSAGE_TRAINING    "Training is performed"
+END
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "Fingerprint-based Compound Classifier\n\nFCC\nFCC Files (*.FCC)\n.FCC\nFCC.Document\nFCC.Document"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "FCC"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+    IDS_MESSAGE_FAILOPENFILE "Can't open a specific file"
+    IDS_MESSAGE_MEMORY      "not enough memory"
+    IDS_MESSAGE_INCORRECTFORMAT 
+                            "Can't load fingerprint due to incorrect format"
+    IDS_MESSAGE_INCONSISTENTLENGTH 
+                            "The length of fingerprints varies for different compounds."
+    IDS_MESSAGE_STARTPRINT  "indicator when print job starts"
+    IDS_MESSAGE_ENDPRINT    "indicator when print job is finished"
+    IDS_MESSAGE_CUSTOM      "dynamic message generated by runtime code"
+    IDS_MESSAGE_NOTRAININGDATA 
+                            "Error for training set up if there is no complete training set."
+    IDS_MESSAGE_STOPTRAINING "message when user stops the training"
+    IDS_MESSAGE_EXPORTMODEL "message for exporting model"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_ADABOOST_MODELTRAINING 
+                            "Input parameters to develop a model from training data set."
+    ID_ADABOOST_PREDICTING  "Making prediction on the testing data set based on developed model"
+    ID_EDIT_EDITPROJECTTITLE "Edit Project Title and Names of Dataset"
+    ID_FILE_LOADFINGERPRINTS 
+                            "Load compound fingerprints as training or testing data"
+    ID_VIEW_FITTOWINDOWSIZE "Fit the error curve to window size"
+    ID_VIEW_DISPLAYOPTION   "Change the display settings"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MESSAGE_TRAINFINISHED "The training of adaboost is finished"
+    IDS_MESSAGE_NOMEMORY    "Not enough memory"
+    IDS_MESSAGE_SMALLZOOMRATIO 
+                            "due to memory limitation, a smaller zoom ratio is automatically set"
+    IDS_MESSAGE_SELECTCLASSIFIER "Show selected Classifier"
+    IDS_TAG_PROJECT_TITLE   "Project Profile"
+    IDS_TAG_FP_TITLE        "Load Fingerprints"
+    IDS_TAG_TRAIN_TITLE     "Setup Training"
+    IDS_TAG_PREDICT_TITLE   "Make Prediction"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_VERTICALZOOMIN  "Zoom in vertically"
+    ID_VIEW_HORIZONALZOOMIN "Zoom in horizonally"
+    ID_VIEW_VERTICALZOOMOUT "Zoom out vertically"
+    ID_VIEW_HORIZONALZOOMOUT "Zoom out horizonally"
+    ID_VIEW_SHOWCOORDINATES "Track the training error"
+    ID_VIEW_PREDICTION      "Show the prediction"
+    ID_VIEW_TRAININGERROR   "Show the training error and browse the model"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TAG_PROJECT_INFO    "Define project title##Specify the names#of two classes"
+    IDS_TAG_FP_INFO         "Load training sets##Load testing sets"
+    IDS_TAG_TRAIN_INFO      "Develop a predictive#model##View and edit#developed model"
+    IDS_TAG_PREDICT_INFO    "Make Prediction on#testing set##View and edit#testing set"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MESSAGE_EXPORTPREDICTION "for exporting prediction"
+    IDS_MESSAGE_COPY        "message for copy"
+    IDS_MESSAGE_NOITEMSELECTED "no item selected for copy or cut"
+    IDS_MESSAGE_PASTE       "message for pasting"
+    IDS_MESSAGE_FINDCOMPOUND 
+                            "message for finding a compound or going to a page for pred view"
+    IDS_MESSAGE_NUMITEMSELECTED "Indicate how many num of items selected"
+    IDS_MESSAGE_MAKEPREDICTION "Message when prediction is shown"
+    IDS_MESSAGE_FITWINDOW   "Message to fit the training error to the window size."
+    IDS_MESSAGE_OPTIMALSTEP "Message to show the optimal number of training steps based on cross-validation score"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_STOPTRAINING    "Stop the current model training"
+    ID_EDIT_EXPORT          "Export classifier or prediction"
+    ID_EDIT_SELECTALL       "Select everything in the view"
+    ID_VIEW_STARTUPPAGE     "Show the welcome page"
+    ID_EditParameterOpt     "Optimize the number of training steps based on cross-validation error"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral (Default) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEUD)
+#ifdef _WIN32
+LANGUAGE LANG_NEUTRAL, SUBLANG_DEFAULT
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\FCC.ico"
+IDR_FCCTYPE             ICON                    "res\\FCCDoc.ico"
+#endif    // Neutral (Default) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_PROJECT             ICON                    "res\\icon1.ico"
+IDI_FP                  ICON                    "res\\icon2.ico"
+IDI_TRAIN               ICON                    "res\\ico00001.ico"
+IDI_PREDICT             ICON                    "res\\ico00002.ico"
+IDI_HELP                ICON                    "res\\ico00003.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_MESSAGE             BITMAP                  "res\\bitmap1.bmp"
+IDB_WARNING             BITMAP                  "res\\bmp00001.bmp"
+IDB_RUNNING             BITMAP                  "res\\bmp00002.bmp"
+IDB_LEFTMOST            BITMAP                  "res\\leftmost.bmp"
+IDB_LEFT                BITMAP                  "res\\left.bmp"
+IDB_RIGHT               BITMAP                  "res\\right.bmp"
+IDB_RIGHTMOST           BITMAP                  "res\\rightmost.bmp"
+IDB_DROPDOWN            BITMAP                  "res\\dropdown.bmp"
+IDB_SCROLLUP            BITMAP                  "res\\scrollup.bmp"
+IDB_CHECK               BITMAP                  "res\\check.bmp"
+IDB_BITMAP3             BITMAP                  "res\\ascend.bmp"
+IDB_BITMAP4             BITMAP                  "res\\descend.bmp"
+IDB_YELLOWTAG           BITMAP                  "res\\yellowtag.bmp"
+IDB_GREENTAG            BITMAP                  "res\\greentag.bmp"
+IDB_REDTAG              BITMAP                  "res\\redtag.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_FCCVIEWMENU MENU 
+BEGIN
+    POPUP "RButton"
+    BEGIN
+        MENUITEM "&Fit to Window Size",         ID_VIEW_FITTOWINDOWSIZE
+        MENUITEM "Vertical Zoom-in\tCtrl+Z",    ID_VIEW_VERTICALZOOMIN
+        MENUITEM "Horizontal Zoom-in\tCtrl+H",  ID_VIEW_HORIZONALZOOMIN
+        MENUITEM "Vertical Zoom-out\tAlt+Z",    ID_VIEW_VERTICALZOOMOUT
+        MENUITEM "Horizontal Zoom-out\tAlt+H",  ID_VIEW_HORIZONALZOOMOUT
+        MENUITEM SEPARATOR
+        MENUITEM "&Display Option...",          ID_VIEW_DISPLAYOPTION
+        MENUITEM "Show Coordinates",            ID_VIEW_SHOWCOORDINATES
+    END
+    POPUP "CPredView"
+    BEGIN
+        MENUITEM "Select &All\t Ctrl+A",        ID_EDIT_SELECTALL
+        MENUITEM "&Inverse Selection",          ID_CPREDVIEW_INVERSESELECTION
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM "&Find...\tCtrl+F",            ID_EDIT_FIND
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_NEWDLG DIALOGEX 0, 0, 281, 94
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Create New Project"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,153,74,50,16
+    PUSHBUTTON      "Cancel",IDCANCEL,213,74,50,16
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,7,67,263,1
+    LTEXT           "Project Title:",IDC_STATIC,64,12,40,8
+    LTEXT           "Name of Positive Dataset:",IDC_STATIC,21,30,83,8
+    LTEXT           "Name of Negative Dataset:",IDC_STATIC,17,48,87,8
+    EDITTEXT        IDC_EDIT2,118,8,135,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,118,26,135,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,118,44,135,15,ES_AUTOHSCROLL
+END
+
+IDD_FPDLG DIALOGEX 0, 0, 326, 102
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Load Compound Fingerprints"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,207,78,50,16
+    PUSHBUTTON      "Cancel",IDCANCEL,268,78,50,16
+    LTEXT           "File Name:",IDC_STATIC,7,9,42,9
+    EDITTEXT        IDC_EDIT1,43,7,252,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BUTTON1,295,7,23,12
+    CONTROL         "1234567890123456789012345678901234567890",IDC_RADIO1,
+                    "Button",BS_AUTORADIOBUTTON | WS_GROUP,25,34,294,10
+    CONTROL         "Radio2",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON | WS_GROUP,25,47,294,10
+    CONTROL         "Testing Dataset",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON | WS_GROUP,25,60,294,10
+    CONTROL         "Clean Existing Compounds in The Selected Dataset",IDC_CHECK1,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,81,178,13
+    GROUPBOX        "Load As",IDC_STATIC,9,23,303,52
+END
+
+IDD_TRAINDLG DIALOGEX 0, 0, 200, 129
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Training Setup"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,33,105,50,16
+    PUSHBUTTON      "Cancel",IDCANCEL,107,105,50,16
+    CONTROL         "Continue the previous training",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,83,130,11
+    LTEXT           "Number of Iteration",IDC_STATIC,15,10,72,10
+    EDITTEXT        IDC_EDIT1,97,7,74,14,ES_AUTOHSCROLL
+    CONTROL         "Equal Initial Weight",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON,7,28,92,18
+    CONTROL         "Balanced Class Weight",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,101,28,85,18
+    CONTROL         "Training with Cross Validation",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,52,114,11
+    COMBOBOX        IDC_COMBO1,41,67,43,62,CBS_DROPDOWNLIST | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "data as cross validation set",IDC_STATIC,89,69,87,9
+    LTEXT           "Use",IDC_STATIC,21,69,16,9
+END
+
+IDD_DISPSETTING DIALOGEX 0, 0, 272, 169
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Display Option"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,151,153,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,210,153,50,14
+    GROUPBOX        "Training Error",IDC_STATIC,7,7,258,26
+    LTEXT           "Line  Width",IDC_STATIC,12,20,38,9
+    COMBOBOX        IDC_COMBO1,61,18,39,92,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Line Type",IDC_STATIC,114,20,35,10
+    COMBOBOX        IDC_COMBO2,154,18,59,46,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Color",IDC_STATIC,218,20,19,10
+    GROUPBOX        "Cross-validation Error",IDC_STATIC,7,39,258,27
+    LTEXT           "Line Width",IDC_STATIC,12,52,38,12
+    COMBOBOX        IDC_COMBO3,61,49,39,76,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Line Type",IDC_STATIC,114,52,35,10
+    COMBOBOX        IDC_COMBO4,154,49,59,44,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Color",IDC_STATIC,218,52,19,10
+    GROUPBOX        "Grid",IDC_STATIC,7,74,258,30
+    LTEXT           "Vertical",IDC_STATIC,15,86,30,11
+    EDITTEXT        IDC_EDIT1,60,85,39,12,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SPIN1,"msctls_updown32",UDS_ARROWKEYS | UDS_HOTTRACK,99,86,9,10
+    LTEXT           "Horizontal",IDC_STATIC,115,86,32,11
+    EDITTEXT        IDC_EDIT2,157,85,39,12,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SPIN2,"msctls_updown32",UDS_ARROWKEYS | UDS_HOTTRACK,197,86,9,10
+    CONTROL         "Show Grids",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,211,86,49,11
+    GROUPBOX        "Zoom",IDC_STATIC,7,108,258,39
+    LTEXT           "Vertical Ratio",IDC_STATIC,13,124,43,8
+    COMBOBOX        IDC_COMBO5,62,122,65,90,CBS_DROPDOWN | CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Horizontal Ratio",IDC_STATIC,133,124,52,8
+    COMBOBOX        IDC_COMBO6,188,122,65,89,CBS_DROPDOWN | CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_FINDDIALOG DIALOGEX 0, 0, 224, 71
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Find"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    PUSHBUTTON      "Find Previous",IDC_FINDPREV,159,7,53,13
+    PUSHBUTTON      "Find Next",IDC_FINDNEXT,159,20,53,13
+    EDITTEXT        IDC_EDIT1,12,18,143,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,12,49,46,12,ES_AUTOHSCROLL
+    CONTROL         "Page",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON,69,45,38,18
+    CONTROL         "Line",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,109,45,38,18
+    GROUPBOX        "Find what:",IDC_STATIC,4,2,212,34
+    GROUPBOX        "Go to:",IDC_STATIC,4,39,212,26
+    PUSHBUTTON      "OK",IDC_BUTTON3,159,48,53,13
+END
+
+IDD_PREDDLG DIALOGEX 0, 0, 146, 98
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Prediction Dialog"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,18,79,50,12
+    PUSHBUTTON      "Cancel",IDCANCEL,77,79,50,12
+    EDITTEXT        IDC_EDIT1,29,20,80,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,29,59,81,12,ES_AUTOHSCROLL
+    LTEXT           "How Many Weak Classifiers:",IDC_STATIC,7,7,106,12
+    LTEXT           "Boundary of Reject Option:",IDC_STATIC,7,46,88,12
+    CONTROL         "Use All the Weak Classifiers",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,33,110,12
+END
+
+IDD_EXPDLG DIALOGEX 0, 0, 190, 73
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Export"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,67,53,50,12
+    PUSHBUTTON      "Cancel",IDCANCEL,133,53,50,12
+    CONTROL         "Model",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON,38,37,51,10
+    CONTROL         "Prediction",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,106,37,52,10
+    EDITTEXT        IDC_EDIT1,7,18,145,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BUTTON1,154,18,26,12
+    LTEXT           "File Name:",IDC_STATIC,7,7,68,10
+    LTEXT           "Export:",IDC_STATIC,7,37,30,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_NEWDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 270
+        TOPMARGIN, 7
+    END
+
+    IDD_FPDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 318
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 94
+    END
+
+    IDD_TRAINDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 193
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 121
+    END
+
+    IDD_DISPSETTING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 265
+        TOPMARGIN, 7
+    END
+
+    IDD_FINDDIALOG, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 58
+    END
+
+    IDD_PREDDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 139
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+
+    IDD_EXPDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 183
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 66
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\FCC.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_ASCEND              CURSOR                  "res\\cursor1.cur"
+IDC_DESCEND             CURSOR                  "res\\cursor2.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_TRAINDLG DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 3, 0
+0x2535, "\000" 
+    IDC_COMBO1, 0x403, 4, 0
+0x3031, 0x0025, 
+    IDC_COMBO1, 0x403, 4, 0
+0x3531, 0x0025, 
+    IDC_COMBO1, 0x403, 4, 0
+0x3032, 0x0025, 
+    IDC_COMBO1, 0x403, 4, 0
+0x3532, 0x0025, 
+    IDC_COMBO1, 0x403, 4, 0
+0x3033, 0x0025, 
+    0
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\FCC.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
